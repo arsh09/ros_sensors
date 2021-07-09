@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/ali/rabbot_ws/devel/include",
+        "/home/ali/tiago_public_ws/devel/include",
+        "/opt/ros/kinetic/include",
+        "/home/ali/rabbot_ws/src/rabbot_sim_test/cobotta_ur3_gazebo/include",
+        "/home/ali/rabbot_ws/src/rabbot_sim_test/e100_description/include",
+        "/home/ali/rabbot_ws/src/rabbot_sim_test/rabbot_description/include",
+        "/home/ali/rabbot_ws/src/rabbot_sim_test/rabbot_sim/include",
+        "/usr/include"
+      ],
+      "name": "Linux"
+    }
+  ]
+}

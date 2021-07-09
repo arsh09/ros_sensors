@@ -1,0 +1,16 @@
+<launch>
+
+<!-- Opens gazebo -->
+<include file="$(find gazebo_ros)/launch/empty_world.launch">
+</include>
+
+<!-- URDF -> Param Server -->
+<param name="kinect_descripiton" command="$(find xacro)/xacro '$(find ros_sensors)/urdf/kinect_launch.urdf.xacro'" />
+
+<!-- Spawner -->
+<node
+ name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" 
+ args="-urdf -param kinect_descripiton -model kinect -x 1 -y 0 -z 0"
+ respawn="false" output="screen" />
+
+</launch>

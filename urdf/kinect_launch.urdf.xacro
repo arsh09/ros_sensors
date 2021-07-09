@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<robot name="sensor_kinect" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+    <!-- Kinectv2 -->
+    <xacro:include filename="$(find ros_sensors)/urdf/intel_d435.urdf.xacro" />
+    <xacro:sensor_r430  prefix="intel_d430" parent="world" >
+        <origin
+            xyz="0 0 0.1"
+            rpy="0 0 0" />
+    </xacro:sensor_r430>
+    <link name="world"/> 
+
+    <!-- Kinectv2 --> 
+    <!-- <xacro:include filename="$(find ros_sensors)/urdf/kinectv2.urdf.xacro" />
+    <xacro:sensor_kinectv2  prefix="kinect" parent="world" >
+        <origin
+            xyz="0 0 0.1"
+            rpy="0 0 0" />
+    </xacro:sensor_kinectv2>
+    <link name="world"/>  -->
+
+    <!-- Distance sensor -->
+    <!-- <xacro:include filename="$(find ros_sensors)/urdf/hokuyo_utm30lx.urdf.xacro" />
+    <xacro:sensor_hokuyo_utm30lx  prefix="laser_bot" parent="world" >
+        <origin
+            xyz="0 0 0.1"
+            rpy="0 0 0" />
+    </xacro:sensor_hokuyo_utm30lx>
+    <link name="world"/> -->
+
+ 
+
+</robot>
+
